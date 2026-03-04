@@ -1,0 +1,40 @@
+body{
+background:#8fb3c1;
+text-align:center;
+font-family:Arial;
+}
+
+#pokemonDisplay{
+background:white;
+width:500px;
+margin:auto;
+padding:30px;
+border-radius:40px;
+border:6px solid #d39c2c;
+}
+
+img{
+width:200px;
+}
+
+.moves{
+margin-top:20px;
+}
+
+select{
+margin:5px;
+}
+
+.teamMember{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:20px;
+margin-top:20px;
+border-top:2px solid black;
+padding-top:10px;
+}
+
+.teamMember img{
+width:80px;
+}
