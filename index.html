@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Pokemon Team Builder</title>
-<link rel="stylesheet" href="styles.css">
+  <title>Pokemon Team Builder</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<h2>Name or ID</h2>
+  <div class="page">
+    <div class="card">
+      <h2 class="title">Name or ID</h2>
 
-<input id="pokemonInput" type="text">
-<button onclick="findPokemon()">Find</button>
+      <div class="searchRow">
+        <input id="pokemonInput" type="text" />
+        <button id="findBtn" type="button">Find</button>
+      </div>
 
-<div id="pokemonDisplay">
+      <img id="pokemonImage" alt="" />
 
-<img id="pokemonImage">
+      <audio id="pokemonAudio" controls></audio>
 
-<audio id="pokemonAudio" controls></audio>
+      <div class="movesGrid">
+        <select id="move1"></select>
+        <select id="move2"></select>
+        <select id="move3"></select>
+        <select id="move4"></select>
+      </div>
 
-<div class="moves">
-<select id="move1"></select>
-<select id="move2"></select>
-<select id="move3"></select>
-<select id="move4"></select>
-</div>
+      <button id="addBtn" type="button">Add to Team</button>
 
-<button onclick="addToTeam()">Add to Team</button>
+      <div id="teamBox" class="teamBox"></div>
+    </div>
+  </div>
 
-</div>
-
-<h3>Your Team</h3>
-
-<div id="team"></div>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
